@@ -1,5 +1,7 @@
 #pragma once
-// Test von gitgast
+#include <string>
+using namespace std;
+
 class CDatum
 {
 private:

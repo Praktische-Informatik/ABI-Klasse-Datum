@@ -1,6 +1,6 @@
-#include "stdafx.h"
 #include "Datum.h"
-
+#include <iostream>
+using namespace std;
 
 // Konstruktoren und Destruktor
 
