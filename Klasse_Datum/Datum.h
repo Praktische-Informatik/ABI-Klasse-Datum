@@ -1,5 +1,5 @@
 #pragma once
-
+// Test von gitgast
 class CDatum
 {
 private:
