@@ -1,19 +1,22 @@
 #pragma once
 #include <string>
+
+#define CDatum Date
+
 using namespace std;
 
-class CDatum
+class Date
 {
 private:
 	int tag, monat, jahr;
 
 public:
 	// Konstruktoren und Destruktor
-	CDatum();// Stadndartkonstruktor
-	CDatum(CDatum&);// Kopierkonstruktor
-	CDatum(int, int, int);// Parameterkonstruktor
-	CDatum(string);// Parameterkonstruktor
-	~CDatum();
+	Date();// Stadndartkonstruktor
+	Date(Date&);// Kopierkonstruktor
+	Date(int, int, int);// Parameterkonstruktor
+	Date(string);// Parameterkonstruktor
+	~Date();
 
 	//Getter
 	int getTag();
@@ -21,6 +24,7 @@ public:
 	int getJahr();
 	void getDatum(int&, int&, int&);
 	string getStringDatum();
+	string toString();
 
 	//Setter
 	void setTag(int);
@@ -28,5 +32,11 @@ public:
 	void setJahr(int);
 	void setStringDatum(string);
 	void setDatum(int, int, int);
+
+	Date* addDays(int days);
+	bool isBefore(Date* d);
+	bool isAfter(Date* d);
+	bool isBetween(Date* first, Date* second);
+
 };
 
