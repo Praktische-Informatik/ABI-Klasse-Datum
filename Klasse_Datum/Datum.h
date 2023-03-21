@@ -4,7 +4,9 @@
 #define CDatum Date
 
 using namespace std;
-
+/// <summary>
+/// Klasse Date von Daniel Szumski ~ Abi 2023
+/// </summary>
 class Date
 {
 private:
